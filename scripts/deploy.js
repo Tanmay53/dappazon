@@ -12,7 +12,13 @@ const tokens = (n) => {
 }
 
 async function main() {
+  const [ deployer ] = hre.ethers.getSigners()
 
+  const Dappazon = await hre.ethers.getContractFactory('Dappazon')
+  const dappazon = await Dappazon.deploy()
+  await dappazon.deployed()
+
+  console.log(`Deployed Dappazon contract at ${dappazon.address}.`)
 }
 
 // We recommend this pattern to be able to use async/await everywhere
