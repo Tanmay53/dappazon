@@ -1,5 +1,7 @@
 # Dappazon
 
+Amazon Web3 Clone.
+
 ## Technology Stack & Tools
 
 - Solidity (Writing Smart Contracts & Tests)
